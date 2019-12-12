@@ -1,6 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { removeFeature } from '../actions/carActions';
+// import { connect } from 'react-redux';
+// import { removeFeature } from '../actions/carActions';
 
 const AddedFeature = props => {
   return (
@@ -12,11 +12,10 @@ const AddedFeature = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    // name: state.feature.name,
-    // price: state.feature.price
-  }
-}
+export default AddedFeature;
 
-export default connect(mapStateToProps, { removeFeature })(AddedFeature);
+// const mapStateToProps = state => {
+//   return null;
+// }
+
+// export default connect(mapStateToProps, { removeFeature })(AddedFeature);
